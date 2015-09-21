@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.subspec 'Base' do |bs|
     bs.source_files = 'PMKPFMacros.h'
 
-    bs.dependency 'PromiseKit/base', '~> 1.5'
+    bs.dependency 'PromiseKit/base', :branch => 'swift-2.0-beta5'
 
     bs.frameworks = 'Foundation'
   end
@@ -38,9 +38,10 @@ Pod::Spec.new do |s|
     cs.public_header_files = 'Parse+PromiseKit.h'
 
     cs.dependency 'Parse+PromiseKit/Base'
-    cs.ios.dependency 'Parse', '~> 1.7'
-    cs.ios.dependency 'ParseUI', '~> 1.1.1'
-    cs.osx.dependency 'Parse-OSX', '~> 1.7'
+    cs.ios.dependency 'ParseTwitterUtils', '~> 1.8.3'
+    cs.ios.dependency 'Parse', '~> 1.8.3'
+    cs.ios.dependency 'ParseUI', '~> 1.1.6'
+    cs.osx.dependency 'Parse-OSX', '~> 1.8.3'
 
     cs.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Parse"' }
     cs.osx.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Parse-OSX"' }
