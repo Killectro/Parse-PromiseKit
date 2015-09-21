@@ -7,7 +7,7 @@
 
 #import "Parse+PromiseKit.h"
 #import "PMKPFMacros.h"
-#import <Promise.h>
+#import <PromiseKit/Promise.h>
 
 @implementation PFAnonymousUtils (PromiseKit)
 
