@@ -38,10 +38,10 @@ Pod::Spec.new do |s|
     cs.public_header_files = 'Parse+PromiseKit.h'
 
     cs.dependency 'Parse+PromiseKit/Base'
-    cs.ios.dependency 'ParseTwitterUtils', '~> 1.8.3'
-    cs.ios.dependency 'Parse', '~> 1.8.3'
+    cs.ios.dependency 'ParseTwitterUtils', '~> 1.8.5'
+    cs.ios.dependency 'Parse', '~> 1.8.5'
     cs.ios.dependency 'ParseUI', '~> 1.1.6'
-    cs.osx.dependency 'Parse-OSX', '~> 1.8.3'
+    cs.osx.dependency 'Parse-OSX', '~> 1.8.5'
 
     cs.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Parse"' }
     cs.osx.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Parse-OSX"' }
@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
     fs.public_header_files = 'ParseFacebookUtils+PromiseKit.h'
 
     fs.dependency 'Parse+PromiseKit/Base'
-    fs.dependency 'ParseFacebookUtils', '~> 1.3'
+    fs.dependency 'ParseFacebookUtils', '~> 1.8.5'
 
     fs.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/ParseFacebookUtils"' }
   end
